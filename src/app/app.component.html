@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" style="background: coral"><div style="text-align:center">
+ <form >
+
+   <div class="form-group"    >
+     <label>Movie Name:</label>
+     <input type="text" class="form-control"  required  
+      [(ngModel)]="title" #eid="ngModel"  [class.is-invalid]="eid.invalid && eid.touched" #ed>
+      
+    
+       
+    </div>
+     <div class="form-group">
+       <label>Production</label>
+       <input type="text" class="form-control" #li>
+     </div>
+    
+     <button type="button" class="     btn btn-primary" (click)="getdata(ed,li)"  id="button"  >Submit</button>
+     &nbsp;    &nbsp;    &nbsp; 
+     <button type="button" class="     btn btn-primary" (click)="Sort()"  id="button"  >Sort</button>
+     <br><br>
+ </form>
+
+</div>
+</div>
+<div *ngFor="let name of govind">
+
+  <app-vk [bhuwan]="name"></app-vk>
+</div>
+ 

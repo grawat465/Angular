@@ -1,0 +1,37 @@
+<head>
+
+  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+
+</head>
+<div class="container">
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row" style="height:20%;">
+      <div class="col col-md-2" style="background-color:lavender;">
+        <h2>{{bhuwan.votes}}</h2>
+        <h6>Votes</h6>
+      
+      </div>
+      <div class="col col-md-2"  style="background-color:honeydew;">
+          <h2>{{bhuwan.link}}</h2>
+          <h4>Link</h4>
+      </div>
+
+      <div class="col col-md-2" style="background-color:honeydew;">
+          <h2>{{bhuwan.title}}</h2>
+          <h4>Title</h4>
+      </div>
+      <div class="col col md-2">
+        <button class="btn btn-secondary" style="margin-top: 15%; margin-left:30%" href (click)="upvote()">Upvote</button>
+      </div>
+      <div class="col col md-2">
+          <button class="btn btn-secondary" style="margin-top: 15%;"  href (click)="downvote()">Downvote</button>
+          <bR><br>
+        </div>
+      
+
+    </div>
+
+  </div>
+</div>
+</div>
